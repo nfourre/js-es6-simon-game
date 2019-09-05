@@ -1,0 +1,100 @@
+body {
+  background: #333;
+}
+
+.game-box{
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column
+}
+
+.half-box {
+  width: 500px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+}
+
+.corner {
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all linear 200ms;
+}
+
+.button {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.corner:hover, .corner.active {
+  padding: 6px
+}
+
+
+.btn-top-left {
+  background: #2ECC40;
+  border-radius: 100% 20px 0 20px;
+}
+
+.corner.active .btn-top-left {
+  box-shadow: 0 0 20px #6EDE7B, inset 0px 0px 5px white;
+  background: #6EDE7B;
+}
+
+.btn-top-right {
+  background: #FF4136;
+  border-radius: 20px 100% 20px 0;
+}
+
+.corner.active .btn-top-right {
+  box-shadow: 0 0 20px #FFA39E, inset 0px 0px 5px white;
+  background: #FFA39E;
+}
+
+.btn-bottom-right {
+  background: #0074D9;
+  border-radius: 0 20px 100% 20px;
+}
+
+.corner.active .btn-bottom-right {
+  box-shadow: 0 0 20px #2499FF, inset 0px 0px 5px white;
+  background: #2499FF;
+}
+
+.btn-bottom-left {
+  background: #FFDC00;
+  border-radius: 20px 0 20px 100%;
+}
+
+.corner.active .btn-bottom-left {
+  box-shadow: 0 0 20px #FFE957, inset 0px 0px 5px white;
+  background: #FFE957;
+}
+
+.game-score {
+  width: 160px;
+  height: 160px;
+  background: #333;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -80px 0 0 -80px;
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-text {
+  color: white;
+  font-size: 4rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+
